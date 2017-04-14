@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .xingzuo{
+            width: 350px;
+            height: 250px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            overflow: hidden;
+            _zoom: 1;
+        }
+        .dt {
+            width: 340px;
+            height: 30px;
+            color: darkblue;
+            padding-left: 10px;
+            background-color: pink;
+            line-height: 30px;
+        }
+        .dd-t{
+            width: 350px;
+            height: 80px;
+            background-color: aliceblue;
+            padding: 10px 0;
+        }
+        .dd-t .icon{
+            width: 80px;
+            height: 85px;
+            float: left;
+            background: url("../../img/101.png") no-repeat;
+            margin-right: 10px;
+        }
+        .jintian{
+            padding: 10px 0;
+        }
+        .yunshi{
+            width: 80px;
+            height: 13px;
+            display: inline-block;
+            background: url("../../img/102.jpg") no-repeat;
+            position: relative;
+        }
+        .star{
+            width: 0px;
+            height: 13px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url("../../img/102.jpg") no-repeat;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+           
+            function $(id){return document.getElementById(id);};
+            var txt=["有些机会需要你自己去抓住","去抓住机会,去努力一点,去解决人际关系","别反感跟人沟通；别害怕被人中伤；别忽略心怀叵测的人","去抓住机会,去努力一点,去解决人际关系"];
+            var kuang=[20,30,50,70];
+            $("sele").onchange= function () {
+                $("ico").style.backgroundPosition="0 "+(-80*this.value)+"px";
+                $("star").style.width=kuang[this.value]+"px";
+                $("details").innerHTML=txt[this.value];
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="xingzuo">
+    <div class="dt">星座运势</div>
+    <div class="dd">
+        <div class="dd-t">
+            <div class="icon" id="ico"></div>
+            <div class="right">
+                <select name="" id="sele">
+                    <option value="0">白羊座（03.21-04.19）</option>
+                    <option value="1">金牛座（04.21-05.19）</option>
+                    <option value="2">双子座（05.21-06.19）</option>
+                    <option value="2">狮子座（06.21-07.19）</option>
+                </select>
+                <div class="jintian">今日运势：
+                    <span class="yunshi">
+                        <span class="star" id="star"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="dd-b" id="details">今日提醒：有些机会需要你自己去抓住。去做：去抓住机会；去努力一点；去解决人际关系。别做：别反感跟人沟通；别害怕被人中伤；别忽略心怀叵测的人。
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>原生ajax-weather</title>
+	<style>
+		#weather{
+			margin:30px auto;
+			width: 600px;
+			height: 100%;
+			background-color: pink;
+			line-height: 30px;
+			text-align: center;
+		}
+		#weather #info{
+			height: 1600px;
+		}
+		#weather #info ul{
+			margin-top: 10px;
+			list-style: none;
+		}
+		#weather #info span{
+			margin-top: 10px;
+			display: block;
+			background-color: yellow;
+
+		}
+		#weather #info ul li{
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="weather">
+		<select id="city">
+			<option value="101010100">帝都</option>
+			<option value="101020100">魔都</option>
+			<option value="10128101">花都</option>
+			<option value="101280601">深圳</option>
+		</select>
+		<input type="button" value="查看天气" id="btn">
+		<div id="info"></div>
+	</div>
+
+	<script>
+		function weather(data){
+			var d = data.weather;
+			var info = document.getElementById('info');
+			info.innerHTML = '';
+			for(var i=0;i<d.length;i++){
+				var date = d[i].date;
+				var day = d[i].info.day;
+				var night = d[i].info.night;
+				var tag = '';
+				tag +='<span>日期：'+ date +'</span><ul>';
+				tag +='<li>白天天气：'+day[1]+'</li>';
+				tag +='<li>白天温度：'+day[2]+'</li>';
+				tag +='<li>白天风向：'+day[3]+'</li>';
+				tag +='<li>白天风速：'+day[4]+'</li>';
+				tag +='</ul>';				
+
+
+				tag +='<ul>';
+				tag +='<li>夜间天气：'+day[1]+'</li>';
+				tag +='<li>夜间温度：'+day[2]+'</li>';
+				tag +='<li>夜间风向：'+day[3]+'</li>';
+				tag +='<li>夜间风速：'+day[4]+'</li>';
+				tag +='</ul>';
+
+				var div = document.createElement('div');
+				div.innerHTML = tag;
+				info.appendChild(div);
+
+			}
+		};
+
+		window.onload = function(){
+			var city = document.getElementById('city');
+			var info = document.getElementById('info');
+			city.onchange = function(){
+				info.innerHTML = '';
+			};
+			var btn = document.getElementById('btn');
+			btn.onclick = function(){
+				var cityCode = city.value;
+				var url = 'http://cdn.weather.hao.360.cn/api_weather_info.php?app=hao360&_jsonp=weather&code='+ cityCode;
+				var script = document.createElement('script');
+				script.src = url;
+				document.getElementsByTagName('body')[0].appendChild(script);
+			};
+
+		};
+	</script>
+</body>
+</html>

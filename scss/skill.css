@@ -1,0 +1,35 @@
+/*=========================== skill 内容部分 =============================*/
+.skill  .skill-item{
+    padding: 20px 0 30px 10px;
+}
+
+.skill .skill-item p{
+    padding-bottom: 20px;
+    font-size: 0;
+}
+.skill .skill-item p span{
+    display: inline-block;
+    width: 90px;
+    height: 64px;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 20px 0;
+    line-height: 24px;
+    text-align: center;
+    background-color: #809cd8;
+}
+.skill .skill-item p span:hover{
+    font-size: 20px;
+    background-color: #3B5998;
+    transition: .5s linear;
+}
+.skill .skill-item ul{
+
+  
+}
+.skill .skill-item ul li{
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+

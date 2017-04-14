@@ -1,0 +1,173 @@
+ {
+    "messages": [{
+        "id": 0,
+        "name": "张敏老师",
+        "pic": "../../img/avatar/11.png",
+        "lastMessage": {
+            "originalTime": "下午06:34:55",
+            "time": "",
+            "content": "小明妈妈，小明最近老上课破坏纪律啊？",
+            "isFromeMe": false
+        },
+        "noReadMessages": 12,
+        "showHints": true,
+        "message": [{
+            "isFromeMe": false,
+            "content": "今天学了什么都啊",
+            "time": "2016-12-22 08:50:22"
+        }, {
+            "isFromeMe": true,
+            "content": "明天是不是考试英语啊",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "小花的生日party真的不错啊",
+            "time": "2016-12-27 06:34:55"
+        }, {
+            "isFromeMe": true,
+            "content": "小明跟小花一起去图书馆了",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "小亮还是很积极的",
+            "time": "2016-12-27 06:34:55"
+        }, {
+            "isFromeMe": false,
+            "content": "小新今天感冒了",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "啥时候家长会呢",
+            "time": "2016-12-27 06:34:55"
+        }, {
+            "isFromeMe": true,
+            "content": "听说第二次月考成绩出来了",
+            "time": "2016-12-22 08:51:02"
+        }]
+    }, {
+        "id": 1,
+        "name": "王芳老师",
+        "pic": "../../img/avatar/12.png",
+        "lastMessage": {
+            "originalTime": "下午5:56:55",
+            "time": "",
+            "content": "明天就发上次数学月考的成绩啦",
+            "isFromeMe": false
+        },
+        "noReadMessages": 5,
+        "showHints": true,
+        "message": [{
+            "isFromeMe": false,
+            "content": "你好!",
+            "time": "2016-12-22 08:50:22"
+        }, {
+            "isFromeMe": true,
+            "content": "你好, 你是谁?",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "明天什么时候去吃饭?",
+            "time": "2016-12-26 5:22:55"
+        }]
+    }, {
+        "id": 2,
+        "name": "小花爸爸",
+        "pic": "../../img/avatar/18.png",
+        "lastMessage": {
+            "originalTime": "下午5:34:55",
+            "time": "",
+            "content": "我家小花在新东方补习口语呢",
+            "isFromeMe": false
+        },
+        "noReadMessages": 2,
+        "showHints": false,
+        "message":[{
+            "isFromeMe": false,
+            "content": "你好!",
+            "time": "2016-12-22 08:50:22"
+        }, {
+            "isFromeMe": true,
+            "content": "你好, 你是谁?",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "哎哟，是我啦，小花爸爸！",
+            "time": "2016-12-22 15:34:55"
+        }]
+    }, {
+        "id": 3,
+        "name": "小亮妈妈",
+        "pic": "../../img/avatar/16.png",
+        "lastMessage": {
+            "originalTime": "下午5:34:55",
+            "time": "",
+            "content": "周末有什么安排?一起踏青去！",
+            "isFromeMe": false
+        },
+        "noReadMessages": 20,
+        "showHints": true,
+        "message":[{
+            "isFromeMe": false,
+            "content": "小明多高啦？",
+            "time": "2016-12-22 08:50:22"
+        }, {
+            "isFromeMe": true,
+            "content": "好像比小亮矮一点呢",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "这两家伙，成天不爱学习",
+            "time": "2016-12-22 15:34:55"
+        }, {
+            "isFromeMe": false,
+            "content": "哎呀,忘记给小明买课外阅读书了",
+            "time": "2016-12-27 06:34:55"
+        }, {
+            "isFromeMe": true,
+            "content": "小亮杠杠的啊",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": true,
+            "content": "校运会的服装已经订好啦",
+            "time": "2016-12-27 06:34:55"
+        }]
+    }, {
+        "id": 4,
+        "name": "小新妈妈",
+        "pic": "../../img/avatar/17.png",
+        "lastMessage": {
+            "originalTime": "下午5:34:55",
+            "time": "",
+            "content": "明天小新生日哟，让你家小明来玩嘛。",
+            "isFromeMe": false
+        },
+        "noReadMessages": 10,
+        "showHints": false ,
+        "message":[{
+            "isFromeMe": true,
+            "content": "我看挺好的",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "不如一起组织去红十字会",
+            "time": "2016-12-27 06:34:55"
+        }, {
+            "isFromeMe": false,
+            "content": "上次英语小明又退步了",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "是不是小明跟小亮打球去了？",
+            "time": "2016-12-27 06:34:55"
+        }, {
+            "isFromeMe": true,
+            "content": "明天考数学不",
+            "time": "2016-12-22 08:51:02"
+        }, {
+            "isFromeMe": false,
+            "content": "哎呦喂，小明今天竟然刷了碗",
+            "time": "2016-12-27 06:34:55"
+        }
+        ]
+    }]
+}

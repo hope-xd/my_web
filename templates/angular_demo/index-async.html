@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>异步加载库</title>
+	<script src="bower_components\script.js-2.5.8\dist\script.js"></script>
+	<script>
+		function $script(loads,callback){
+			var scriptElement=$document[0].createElement('script');
+			scriptElement.src = loads;
+			$document[0].head.appendChild(scriptElement);
+			scriptElement.addEventLister('load',callback);
+		};
+		$script('app.js',function(){
+			console.log(111);
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

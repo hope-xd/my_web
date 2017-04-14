@@ -1,0 +1,48 @@
+<div class="dialogue" ng-controller="MessageCtrl">
+<ion-header-bar class="bar bar-header bar-positive">
+    <div class="buttons">
+        <button class="button icon ion-ios-arrow-left" ng-click="goBack()">返回</button>
+      </div>
+      <h1 class="title">{{messageItem.name}}</h1>
+      <div class="buttons">
+        <button class="button icon ion-person"></button>
+    </div>
+</ion-header-bar>
+
+<ion-content class="has-header has-footer">
+<div class="bubble" ng-repeat="chatBubble in chatBubbleItem">
+          <div class="item item-avatar" class="other" ng-if="!chatBubble.isFromeMe==true">
+            <img ng-src="{{messageItem.pic}}">
+            <h2>{{messageItem.name}}</h2>
+            <span>{{chatBubble.content}}</span>
+          </div>
+         <div class="item item-avatar" ng-class="{true:'right'}[chatBubble.isFromeMe]" ng-if="chatBubble.isFromeMe==true">
+            <img ng-class="{true:'right'}[chatBubble.isFromeMe]" ng-src="../../img/avatar/15.png">
+            <h2 ng-class="{true:'right'}[chatBubble.isFromeMe]">小明妈妈</h2>
+            <span ng-class="{true:'self'}[chatBubble.isFromeMe]">{{chatBubble.content}}</span>
+          </div>
+</div>
+</ion-content>
+
+<ion-footer-bar class="bar bar-footer bar-positive">
+        <button class="button button-icon icon ion-ios-mic-outline rj-footer-btn-left">
+        </button>
+        <label class="item item-input">
+            <input type="text" ng-model="send_content">
+            <button class="button button-icon icon ion-happy-outline"></button>
+        </label>
+        <div>
+        <button class="button button-icon icon ion-ios-plus-outline " ng-show="!send_content || send_content === ''"></button>
+        <div ng-hide="!send_content || send_content === ''">
+            <p>发送</p>
+        </div>
+        </div>
+</ion-footer-bar>
+
+</div>
+       <!--   <div class="item item-avatar" ng-class="{true:'right'}[chatBubble.isFromeMe]" ng-if="chatBubble.isFromeMe==true">
+          <img ng-class="{true:'right'}[chatBubble.isFromeMe]" ng-src="../../img/avatar/15.png">
+          <h2 ng-class="{true:'right'}[chatBubble.isFromeMe]">小明妈妈</h2>
+          <span ng-class="{true:'self'}[chatBubble.isFromeMe]">{{send_content}}</span>
+        </div>
+        -->

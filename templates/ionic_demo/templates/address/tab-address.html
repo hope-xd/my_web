@@ -1,0 +1,40 @@
+<ion-view view-title="Address">
+  <ion-content>
+    <div class="bar bar-header bar-positive">
+    <h1 class="title">通讯录
+    </h1>
+    </div>
+    <nav id="nav">
+     <div class="row">
+        <span class="col col-33">
+         <i class="icon ion-person"></i>
+         <h2>班级通讯录</h2>
+       </span>
+       <span class="col col-33">
+         <i class="icon ion-person-stalker"></i>
+         <h2>群组通讯录</h2>
+       </span>
+       <span class="col col-33">
+         <i class="icon ion-person-add"></i>
+         <h2>好友列表</h2>
+       </span>
+     </div>
+    </nav>
+    
+    <div class="item-divider"></div>
+    
+    <div class="chatlist" ng-controller="AddressCtrl">
+      <a class="item item-avatar" ng-repeat="item in messages" ui-sref="message({messageId:item.id})" href="#/message/messageId" ng-click="go_messageId()">
+        <img ng-src="{{item.pic}}">
+        <span class="badge badge-assertive">{{item.noReadMessages}}</span>
+        <h2>{{item.name}}</h2>
+        <span>{{item.lastMessage.originalTime}}</span>
+        <p>{{item.lastMessage.content}}</p>
+      </a>
+    </div>
+
+    <div class="item-divider"></div>
+   
+    </div>
+  </ion-content>
+</ion-view>

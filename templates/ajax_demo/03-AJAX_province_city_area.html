@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>省市区三级联动</title>
+	<style type="text/css">
+	#showInfo{
+		position: absolute;
+		width: 600px;
+		height: 500px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		background: lightgreen;
+		left: 50%;
+		margin-left: -300px;
+	}
+	#showInfo div{
+		float:left;
+		margin-left: 30px;
+		margin-top: 30px;
+		width: 160px;
+	}
+	#showInfo div select{
+		width: 160px;
+	}
+	</style>
+	<script type="text/javascript" src="../../components/jquery/jquery.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		function callback(id,code,flag){
+				$.ajax({
+					url:'data.php',
+					type:'get',
+					dataType:'jsonp',
+					data:{citycode:code,flag:flag},
+					success:function(data){
+							$.each(data,function(i,element){
+								var op = $('<option></option>').attr('value',element.code).append(element.name);
+								$('#'+id).append(op);
+							});
+							console.log(111)
+					},
+			});
+		};
+
+
+		var area = function(cCode){
+			callback('area',cCode,3);
+		};		
+		var city = function(pCode){
+			callback('city',pCode,2);
+		};
+
+		//获取省的信息
+		var province = function(pCode){
+			callback('province',pCode,1);
+		};
+		province(0);
+		city(1100100);
+		$('#province').change(function(){
+			$('#city').empty();
+			var pCode = $(this).val();
+			city(pCode);
+		});
+		$('#city').change(function(){
+			$('#area').empty();
+			var cCode = $(this).val();
+			area(cCode);
+		});
+
+	});
+	</script>
+</head>
+<body>
+	<div id="showInfo">
+		<div>
+			<select id="province">
+			</select>
+		</div>
+		<div>
+			<select id="city">
+			</select>
+		</div>
+		<div>
+			<select id="area">
+			</select>
+		</div>
+	</div>
+</body>
+</html>

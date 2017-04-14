@@ -1,0 +1,31 @@
+/*=========================== work 内容部分 =============================*/
+.work .work-list{
+	padding: 20px 0 30px 10px;
+	display: flex;
+	justify-content:space-between; ;
+}
+.work a{
+	display: inline-block;
+    padding-right: 10px;
+    margin-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+.work a i{
+	font-style: normal;
+	display: block;
+	width: 64px;
+	height: 64px;
+	line-height: 64px;
+	border-radius: 50%; 
+	text-align: center;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+.work a span{
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}

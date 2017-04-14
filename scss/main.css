@@ -1,0 +1,14 @@
+
+.mCSB_container { 
+	margin-right: 0 !important; 
+}
+.mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ 
+	background-color: #3B5998 !important; 
+	width: 16px;
+	border-radius: 0;
+}
+.mCS-my-theme.mCSB_scrollTools .mCSB_draggerRail{ 
+	background-color: #bbb; 
+	width: 16px;
+	border-radius: 0;
+} 

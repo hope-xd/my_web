@@ -1,0 +1,54 @@
+
+/*address自定义部分*/
+
+#nav .row span i::before{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+#nav .row span h2{
+	height: 20px;
+	margin-top: 6px;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+.item-divider{
+	padding: 0;
+	min-height: 10px;
+	border: 0;
+}
+.item-divider:last-of-type{
+	position: static;
+	min-height: 90px;
+}
+.chatlist .item.item-avatar{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #ddd;
+}
+.chatlist .item.item-avatar:first-of-type{
+	border-top: 0;
+}
+.chatlist .item.item-avatar:last-of-type{
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.chatlist .badge.badge-assertive{
+	right: 250px;
+	top:8px;
+}
+.chatlist h2,.chatlist span,.chatlist p{
+	font-size: 12px;
+}
+.chatlist h2{
+	line-height: 30px;
+}
+.chatlist span{
+	position: absolute;
+	top: 10px;
+	right: 16px;
+}

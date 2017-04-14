@@ -1,0 +1,97 @@
+/*=========================== experience 内容部分 =============================*/
+.experience dl{
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px dashed #bbb;
+	min-height: 170px;
+}
+.experience dl:last-of-type{
+	margin-bottom: 30px;
+	border:none;
+}
+.experience dl dt,.experience dl dd{
+    padding-bottom: 6px;
+    font-size: 12px;
+}
+.experience dl dt{
+    color: #fff;
+    padding: 40px 15px;
+	width: 24%;
+    height: 140px;
+	float: left;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #809cd8;
+	margin-right: 20px;
+}
+.experience dl dt:hover{
+    font-size: 18px;
+    background-color: #3B5998;
+    transition: .5s linear;
+}
+
+.experience dl dd{
+	width: 100%;
+}
+.contact{
+
+}
+
+.contact{
+	padding-left: 10px;
+
+}
+.contact p{
+	margin-top: 20px;
+}
+.contact p label{
+	display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.contact p input,.contact p textarea{
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc
+}
+.contact p textarea{
+	flex-direction: column;
+	height: 150px;
+    resize: auto;
+    cursor: auto
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+}
+.contact  p:last-of-type{
+	padding-bottom: 10px;
+}
+.contact  p:last-of-type .reset,.contact  p:last-of-type .submit{
+	width: 20%;
+	display: inline-block;
+	margin-right: 2%;
+	color: #fff;
+}
+.contact  p .reset{
+	background-color: #999;
+}
+.contact p .reset:hover{
+	background-color: #666;
+}
+.contact  p .submit{
+	background-color: #3B5998;
+
+}

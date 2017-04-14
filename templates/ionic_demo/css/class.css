@@ -1,0 +1,65 @@
+.cardwrap{
+	border: 0;
+	border-bottom: 1px solid #ddd;
+}
+.cardwrap .item-avatar{
+	border-bottom: 0;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	min-height: 60px;
+}
+.cardwrap .item-avatar h2{
+	font-size: 12px;
+	line-height: 32px;
+}
+.cardwrap .item-avatar .badge.badge-assertive{
+	font-size: 12px;
+	right: 140px;
+	top: 12px;
+	background-color: #01acbe;
+}
+.cardwrap .item-body{
+	border-top: 0;
+	padding: 0 12px 0 72px;
+}
+.cardwrap .item-body i::before{
+	font-size: 24px;
+	color: #01acbe;
+	position: absolute;
+	top: -2px;
+}
+.cardwrap .item-body h2{
+	margin-top: 0;
+	margin-bottom: 6px;
+	margin-left: 0;
+}
+.cardwrap .item-body img{
+	margin-left: 6px;
+	width: 72px;
+	height: 90px;
+}
+.cardwrap .article{
+	display: inline-flex;
+}
+.cardwrap .article .para{
+	padding:6px;
+	background-color: #eee;
+}
+.cardwrap .article h2{
+	color: #444;
+}
+.cardwrap .article h2,.cardwrap .article p{
+	display: block;
+}
+.cardwrap .article p{
+	padding-top: 6px;
+}
+.cardwrap .item-body p{
+	margin-top: 0;
+	text-align: left;
+}
+.cardwrap .item-body p a i::before{
+	position: static;
+	font-size: 12px;
+	color: #999;
+}

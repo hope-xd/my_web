@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击跟随鼠标</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #image{
+            position: absolute;
+            idth: 80px;
+            height: 80px;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<img src="../../img/cloud.gif" alt="" id="image">
+<script>
+    var image = document.getElementById("image");
+    document.onclick = function(event){
+        var event = event || window.event;
+        targetX = event.clientX - image.offsetWidth/2;
+        targetY = event.clientY - image.offsetHeight/2;
+    }
+
+
+    var leaderX = 0,leaderY = 0,targetX = 0,targetY =0;
+    setInterval(function () {
+        leaderX = leaderX + (targetX - leaderX)/10;
+        leaderY = leaderY + (targetY - leaderY)/10;
+        image.style.top = leaderY + "px";
+        image.style.left = leaderX + "px";
+    },10)
+</script>
+</body>
+</html>

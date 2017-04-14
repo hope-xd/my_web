@@ -1,0 +1,130 @@
+.bar.bar-positive {
+    border-color: #fe5454;
+    background-color: #fe5454;
+    background-image: linear-gradient(0deg, #fe5454, #fe5454 50%, transparent 50%);
+    color: #fff; }
+.bar.bar-positive .title {
+  color: #fff; }
+.bar.bar-positive.bar-footer {
+  background-image: linear-gradient(180deg, #fe5454, #fe5454 50%, transparent 50%); }
+
+/*chats自定义部分*/
+.bar.bar-header.bar-positive{
+	position: static;
+}
+.bar.bar-positive h1{
+	font-size: 18px;
+}
+#nav{
+	position: static;
+	padding: 6px;
+}
+#nav .row {
+	font-size: 0;
+}
+#nav .row span{
+	display: inline-block;
+	text-align: center;
+}
+#nav .row span:nth-of-type(1) i::before{
+	height: 40px;
+	width: 40px;
+	background-color: #fe5454;
+	border-radius: 50%;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+#nav .row:nth-of-type(1) span:nth-of-type(1) i::before{
+	background-color: #7f4de6;
+}
+#nav .row:nth-of-type(1) span:nth-of-type(2) i::before{
+	background-color: #ffb900;
+}
+#nav .row:nth-of-type(1) span:nth-of-type(3) i::before{
+	background-color: #0ab9f5;
+}
+#nav .row:nth-of-type(1) span:nth-of-type(4) i::before{
+	background-color: #f63d87;
+}
+#nav .row:nth-of-type(2) span:nth-of-type(1) i::before{
+	background-color: #f5423e;
+}
+#nav .row:nth-of-type(2) span:nth-of-type(2) i::before{
+	background-color: #16d997;
+}
+#nav .row:nth-of-type(2) span:nth-of-type(3) i::before{
+	background-color: #fe970f;
+}
+#nav .row:nth-of-type(2) span:nth-of-type(4) i::before{
+	background-color: #19e6fc;
+}
+#nav .row span h2{
+	height: 20px;
+	margin-top: 6px;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+.item-divider{
+	padding: 0;
+	min-height: 10px;
+	border: 0;
+}
+.item-sign {
+	border-top:0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	height: 30px;
+}
+.item-sign i{
+	width: 6px;
+	height:12px;
+	background-color: #fe5454; 
+	position: absolute;
+}
+.item-sign h2{
+	margin-left: 12px;
+	font-size: 12px;
+}
+.noticewrap{
+	border: 0;
+	border-bottom: 1px solid #ddd;
+}
+.noticewrap .item-avatar{
+	border-bottom: 0;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	min-height: 60px;
+}
+.noticewrap .item-avatar h2{
+	font-size: 12px;
+	line-height: 48px;
+}
+.noticewrap .item-avatar .badge-assertive{
+	font-size: 12px;
+	right: 140px;
+	top: 18px;
+}
+.noticewrap .item-body{
+	border-top: 0;
+	padding: 0 12px 0 72px;
+}
+.noticewrap .item-body i::before{
+	font-size: 24px;
+	color: #01acbe;
+	position: absolute;
+	top: -2px;
+}
+.noticewrap .item-body h2{
+	margin-top: 0;
+	margin-bottom: 6px;
+	margin-left: 24px;
+}
+.noticewrap .item-body img{
+	width: 240px;
+	height: 120px;
+}
+.noticewrap .item-body p{
+	margin-top: 0;
+}
